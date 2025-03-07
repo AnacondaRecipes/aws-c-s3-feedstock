@@ -19,12 +19,12 @@ requirements:
     - {{ compiler('c') }}
     - ninja-base
   host:
-    - aws-checksums 0.1.13
-    - aws-c-auth 0.6.19
-    - aws-c-cal 0.5.20
-    - aws-c-common 0.8.5
-    - aws-c-http 0.6.25
-    - aws-c-io 0.13.10
+    - aws-checksums 0.2.3
+    - aws-c-auth 0.8.5
+    - aws-c-cal 0.8.5
+    - aws-c-common 0.11.1
+    - aws-c-http 0.9.3
+    - aws-c-io 0.17.0
     - openssl {{ openssl }}  # [linux]
 
 test:

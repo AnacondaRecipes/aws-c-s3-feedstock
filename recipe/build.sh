@@ -10,11 +10,11 @@ cmake ${CMAKE_ARGS} -GNinja \
   -DCMAKE_INSTALL_LIBDIR=lib \
   -DCMAKE_BUILD_TYPE=Release \
   -DBUILD_SHARED_LIBS=ON \
-  -DBUILD_TESTING=OFF \
+  -DBUILD_TESTING=ON \
+  -DCMAKE_POSITION_INDEPENDENT_CODE=ON \
   ..
-ninja install
-# if [[ "${CONDA_BUILD_CROSS_COMPILATION:-0}" != "1" ]]; then
-#   Tests don't work without S3 credentials
-#   ninja test
-# fi
+
+cmake --build . --config Release --target install
+
+ctest --output-on-failure -j${CPU_COUNT}
 popd

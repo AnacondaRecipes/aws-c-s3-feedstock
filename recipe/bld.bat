@@ -7,7 +7,7 @@ cmake -GNinja ^
       -DCMAKE_INSTALL_LIBDIR=lib ^
       -DCMAKE_BUILD_TYPE=Release ^
       -DBUILD_SHARED_LIBS=ON ^
-      -DBUILD_TESTING=ON ^
+      -DBUILD_TESTING=OFF ^
       -DCMAKE_POSITION_INDEPENDENT_CODE=ON ^
       ..
 if errorlevel 1 exit 1
@@ -15,5 +15,5 @@ if errorlevel 1 exit 1
 cmake --build . --config Release --target install
 if errorlevel 1 exit 1
 
-ctest --output-on-failure
-if errorlevel 1 exit 1
+@REM The unit tests require an AWS account with S3 buckets set up in a particular way.
+@REM https://github.com/awslabs/aws-c-auth/blob/main/README.md#testing

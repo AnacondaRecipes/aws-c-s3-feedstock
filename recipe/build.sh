@@ -18,5 +18,5 @@ cmake --build . --config Release --target install
 
 popd
 
-@REM The unit tests require an AWS account with S3 buckets set up in a particular way.
-@REM https://github.com/awslabs/aws-c-auth/blob/main/README.md#testing
+# The unit tests require an AWS account with S3 buckets set up in a particular way.
+# https://github.com/awslabs/aws-c-auth/blob/main/README.md#testing

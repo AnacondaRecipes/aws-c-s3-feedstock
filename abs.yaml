@@ -1,5 +1,0 @@
-channels:
-  - https://staging.continuum.io/preprod-pbp/fs/aws-c-io-feedstock/pr7/928beff
-  - https://staging.continuum.io/preprod-pbp/fs/aws-c-compression-feedstock/pr6/8a902d3
-  - https://staging.continuum.io/preprod-pbp/fs/aws-c-http-feedstock/pr7/c623fb1
-  - https://staging.continuum.io/preprod-pbp/fs/aws-c-auth-feedstock/pr7/15f9a47

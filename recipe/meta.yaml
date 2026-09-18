@@ -1,5 +1,5 @@
 {% set name = "aws-c-s3" %}
-{% set version = "0.12.5" %}
+{% set version = "0.13.5" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/awslabs/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 1d039ef1fb7df6696757b3fe219ce03a52c244c79e38d637c49d99b4f5871e14
+  sha256: d61313aa30575141afd9dfb207b7594e30d0473885719417c7c8a2a53d3ebb5f
 
 build:
   number: 0
@@ -22,11 +22,11 @@ requirements:
     - ninja-base
   host:
     - aws-checksums 0.2.10
-    - aws-c-auth 0.10.3
-    - aws-c-cal 0.9.14
-    - aws-c-common 0.14.0
+    - aws-c-auth 0.10.4
+    - aws-c-cal 0.9.15
+    - aws-c-common 0.14.5
     - aws-c-http 0.11.0
-    - aws-c-io 0.26.3
+    - aws-c-io 0.27.6
     - openssl {{ openssl }}  # [linux]
 
 test:

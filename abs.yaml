@@ -5,3 +5,4 @@ channels:
   - https://staging.continuum.io/pbp/fs/aws-c-http-feedstock/pr10/e29c3f6
   - https://staging.continuum.io/pbp/fs/aws-c-sdkutils-feedstock/pr12/e1dd134
   - https://staging.continuum.io/pbp/fs/aws-checksums-feedstock/pr11/e675e07
+  - https://staging.continuum.io/pbp/fs/aws-c-auth-feedstock/pr9/5a5f6eb
